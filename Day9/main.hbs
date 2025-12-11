@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MongoDB Crud Example</title>
+</head>
+<body>
+    <h1>Mongo DB</h1>
+    {{message}}
+
+<h2>create the data</h2>
+    <form action="/store_book" method="post">
+        Title: 
+        <input type="text" name="title">
+        Author:
+        Title: 
+        <input type="text" name="author">
+        <input type="submit" value="insert">
+    </form>
+    <ul>
+        {{#each mydata}}
+        <li>{{this.title}} - {{this.author}}</li>
+        {{/each}}
+    </ul>
+</body>
+</html>
